@@ -1,3 +1,4 @@
+from flask import jsonify
 from functools import wraps
 
 def token_required(f):
@@ -5,7 +6,6 @@ def token_required(f):
     @wraps(f)
     def decorated(*args, **kwargs):
         try:
-            
             return f(*args, **kwargs)
             
         except Exception as e:

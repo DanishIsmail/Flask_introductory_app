@@ -4,7 +4,6 @@ from datetime import datetime
 from marshmallow import ValidationError
 from app.schemas.users_schema import users_schema
 from app.config import Config
-from app.helpers.roles import Roles
 
 # MongoDB Client Setup
 client = MongoClient(Config.MONGO_URL)
